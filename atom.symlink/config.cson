@@ -1,9 +1,9 @@
 "*":
   editor:
     showIndentGuide: true
-    fontFamily: "Menlo"
+    fontFamily: "Source Code Pro"
     invisibles: {}
-    fontSize: 15
+    fontSize: 16
     softWrapAtPreferredLineLength: true
   core:
     ignoredNames: [
@@ -15,15 +15,11 @@
       "vendor"
     ]
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "seti-ui"
+      "seti-syntax"
     ]
     hideGitIgnoredFiles: true
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-    ]
+    disabledPackages: []
     followSymlinks: false
   "spell-check":
     grammars: [
@@ -33,7 +29,3 @@
     ]
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "go-plus":
-    goPath: "/Users/holman/Code/go"
