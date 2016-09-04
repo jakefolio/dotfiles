@@ -1,31 +1,71 @@
 "*":
-  editor:
-    showIndentGuide: true
-    fontFamily: "Source Code Pro"
-    invisibles: {}
-    fontSize: 16
-    softWrapAtPreferredLineLength: true
+  "aligner-php":
+    "=-leftSpace": false
+    "=-rightSpace": false
+  "aligner-ruby": {}
+  "autocomplete-go": {}
+  "copy-as-rtf": {}
   core:
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
+    disabledPackages: [
+      "linter-phpmd"
+      "turbo-javascript"
+      "auto-detect-indentation"
+      "go-plus"
+      "autocomplete-go"
+      "go-get"
+      "gometalinter-linter"
+      "navigator-godef"
+      "go-config"
     ]
+    excludeVcsIgnoredPaths: false
     themes: [
       "seti-ui"
-      "seti-syntax"
+      "base16-tomorrow-dark-theme"
     ]
-    hideGitIgnoredFiles: true
-    disabledPackages: []
-    followSymlinks: false
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-    ]
+  docblockr:
+    align_tags: "shallow"
+    spacer_between_sections: true
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 100
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  emmet: {}
+  "exception-reporting":
+    userId: "e72eff13-0bc3-a5f7-dd5e-000c8a0f6c75"
+  "git-log": {}
+  "git-plus": {}
+  "go-plus": {}
+  "highlight-line": {}
+  "language-babel": {}
+  linter:
+    showErrorPanel: false
+  "linter-php": {}
+  "linter-phpcs":
+    executablePath: "/Users/jsmith/.composer/vendor/bin/phpcs"
+  "linter-rubocop":
+    command: "/Users/jsmith/.rbenv/versions/2.2.3/bin/rubocop"
+  "linter-ruby":
+    rubyExecutablePath: "/Users/jsmith/.rbenv/shims/ruby"
+  "markdown-writer": {}
+  "merge-conflicts": {}
+  "rubocop-auto-correct": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".babel.regexp.source":
+  editor:
+    preferredLineLength: 100
+".ini.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
