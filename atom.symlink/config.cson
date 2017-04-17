@@ -16,8 +16,12 @@
       "gometalinter-linter"
       "navigator-godef"
       "go-config"
+      "builder-go"
+      "gofmt"
+      "tester-go"
     ]
     excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
     themes: [
       "seti-ui"
       "base16-tomorrow-dark-theme"
@@ -43,16 +47,23 @@
   "language-babel": {}
   linter:
     showErrorPanel: false
+  "linter-eslint":
+    globalNodePath: "/usr/local"
+    useGlobalEslint: true
   "linter-php": {}
   "linter-phpcs":
     executablePath: "/Users/jsmith/.composer/vendor/bin/phpcs"
-  "linter-rubocop":
-    command: "/Users/jsmith/.rbenv/versions/2.2.3/bin/rubocop"
+  "linter-rubocop": {}
   "linter-ruby":
     rubyExecutablePath: "/Users/jsmith/.rbenv/shims/ruby"
   "markdown-writer": {}
   "merge-conflicts": {}
   "rubocop-auto-correct": {}
+  "seti-ui":
+    compactView: true
+    disableAnimations: true
+    font: "Default Atom Font"
+    themeColor: "Green"
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
@@ -62,10 +73,13 @@
 ".babel.regexp.source":
   editor:
     preferredLineLength: 100
-".ini.source":
+".diff.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
+".ini.source":
+  editor:
+    preferredLineLength: 100
 ".js.jsx.source":
   editor:
     preferredLineLength: 100

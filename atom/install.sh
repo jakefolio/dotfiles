@@ -1,1 +1,1 @@
-apm stars --install
+apm install --packages-file atom/atom-packages.list
