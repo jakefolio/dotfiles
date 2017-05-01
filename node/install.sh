@@ -1,9 +1,9 @@
 if test ! $(which spoof)
 then
-  sudo npm install spoof -g
+  yarn global add spoof
 fi
 
-sudo npm install babel-cli -g
-sudo npm install eslint -g
-sudo npm install newman -g
-sudo npm install gulp -g
+yarn global add babel-cli
+yarn global add create-react-app
+yarn global add newman
+yarn global add n

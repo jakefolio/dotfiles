@@ -137,8 +137,14 @@ install_dotfiles () {
   done
 }
 
+install_fonts() {
+  info 'installing powerline fonts'
+  git submodule update --init
+}
+
 setup_gitconfig
 install_dotfiles
+install_fonts
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
