@@ -140,11 +140,18 @@ install_dotfiles () {
 install_fonts() {
   info 'installing powerline fonts'
   git submodule update --init
+  $DOTFILES_ROOT/fonts/install.sh
+}
+
+install_vim_colors() {
+  info 'installing vim colors'
+  git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
 }
 
 setup_gitconfig
 install_dotfiles
 install_fonts
+install_vim_colors
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
