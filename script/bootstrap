@@ -145,7 +145,10 @@ install_fonts() {
 
 install_vim_colors() {
   info 'installing vim colors'
-  git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
+  if ! [ -e ~/.vim ]
+  then
+    git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
+  fi
 }
 
 setup_gitconfig

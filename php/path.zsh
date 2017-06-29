@@ -1,2 +1,2 @@
-export COMPOSER_PATH=$HOME/.composer/vendor/bin
-export PATH="$COMPOSER_PATH/bin:$PATH"
+export COMPOSER_PATH=$HOME/.composer/
+export PATH="$COMPOSER_PATH/vendor/bin:$PATH"

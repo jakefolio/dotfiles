@@ -7,3 +7,6 @@ if test -f $completion
 then
   source $completion
 fi
+
+# Git Flow Completion
+source $HOME/.dotfiles/git/gitflow.completion.zsh;
