@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.statusBar.visible": true,
+    "explorer.openEditors.visible": 0,
+    "workbench.activityBar.visible": false,
+    "editor.fontFamily": "Fira Code, Monaco, 'Courier New', monospace",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "php.suggest.basic": false,
+    "php.executablePath": "/usr/local/bin/php",
+    "workbench.iconTheme": "material-icon-theme",
+    "extensions.ignoreRecommendations": false,
+    "go.testFlags": [
+        "-v"
+    ],
+    "editor.fontLigatures": true
+}
